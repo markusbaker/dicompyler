@@ -300,8 +300,8 @@ class DicomParser:
         structures = {}
 
         # Determine whether this is RT Structure Set file
-        if not (self.GetSOPClassUID() == 'rtss'):
-            return structures
+        # if not (self.GetSOPClassUID() == 'rtss'):
+        #     return structures
 
         # Locate the name and number of each ROI
         if self.ds.has_key('StructureSetROIs'):
